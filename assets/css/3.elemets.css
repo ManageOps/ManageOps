@@ -1,0 +1,46 @@
+body {
+  background: var(--brown-1);
+  color: var(--brown-2);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--step-5);
+  line-height: 0.8;
+  letter-spacing: -0.08em;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: var(--step-2);
+  line-height: 1em;
+}
+
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: var(--step-1);
+  line-height: 1em;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+ul,
+p {
+  margin-bottom: 1rem;
+}
+
+/* Sane Defaults https://twitter.com/csswizardry/status/1717841334462005661 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}

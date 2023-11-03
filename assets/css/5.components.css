@@ -1,0 +1,121 @@
+.hero {
+  background-image: url(/assets/images/hero.jpeg);
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: var(--space-xl);
+  border-radius: 2rem;
+  margin: var(--space-s);
+  margin-bottom: var(--space-xl);
+}
+
+.hero__body {
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-m);
+  padding-left: var(--space-s);
+  padding-right: var(--space-m);
+  width: 100%;
+  background: var(--brown-1);
+  color: var(--brown-2);
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.footer {
+  background-color: var(--brown-2);
+  color: var(--brown-1);
+  padding: var(--space-m);
+}
+
+.footer a {
+  color: var(--beige);
+  line-height: 2em;
+  border-bottom: 1px solid var(--beige);
+}
+
+.footer a:hover {
+  color: var(--brown-1);
+  text-decoration: none;
+  border-bottom: 1px solid var(--brown-1);
+}
+
+.activity {
+  color: white;
+  background-image: url(/assets/images/img2.jpeg);
+  background-position: 50% 50%;
+  background-repeat: unset;
+  background-size: auto 100%;
+  transition: all 0.5s;
+  display: block;
+  overflow: hidden;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.activity:after {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.activity__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.activity:hover {
+  background-blend-mode: normal;
+  background-size: auto 110%;
+}
+
+.decoration {
+  overflow: visible;
+}
+
+.decoration:before {
+  content: "";
+  display: block;
+  border: 3em solid var(--beige);
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 66%;
+  padding-top: 66%;
+  border-radius: 100%;
+  box-sizing: content-box;
+  z-index: -1;
+}
+
+.decoration-dots {
+  overflow: visible;
+}
+
+.decoration-dots:before {
+  box-sizing: content-box;
+  content: "";
+  display: block;
+  z-index: 10;
+  position: absolute;
+  top: -3rem;
+  left: -2.5rem;
+  background-image: radial-gradient(var(--beige) 30%, transparent 20%);
+  background-position: 0 0;
+  background-size: 3rem 3rem;
+  height: 9rem;
+  width: 15rem;
+}
