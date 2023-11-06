@@ -66,3 +66,51 @@
 .small {
   font-size: var(--step--1);
 }
+
+@media only screen and (min-device-width: 768px) {
+  .container {
+    overflow: visible;
+  }
+  .scroll {
+    overflow: hidden;
+  }
+  .box {
+    margin-bottom: 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: var(--space-xl);
+    margin-bottom: var(--space-3xl);
+  }
+
+  .grid--reverse {
+    direction: rtl;
+  }
+
+  .grid--reverse .grid__item {
+    direction: ltr;
+  }
+
+  .grid__item {
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .grid {
+    max-width: 90%;
+    float: right;
+  }
+
+  .grid--reverse {
+    float: left;
+  }
+
+  .container {
+    clear: both;
+  }
+}

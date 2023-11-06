@@ -31,6 +31,7 @@ h4 {
 ul,
 p {
   margin-bottom: 1rem;
+  font-size: var(--step--0);
 }
 
 /* Sane Defaults https://twitter.com/csswizardry/status/1717841334462005661 */
