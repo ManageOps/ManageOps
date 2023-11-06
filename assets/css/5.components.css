@@ -1,7 +1,7 @@
 .hero {
   background-image: url(/assets/images/hero.jpeg);
   background-size: cover;
-  height: 80vh;
+  height: 66vh;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -32,6 +32,10 @@
   background-color: var(--brown-2);
   color: var(--brown-1);
   padding: var(--space-m);
+  margin-left: var(--space-m);
+  margin-right: var(--space-m);
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
 }
 
 .footer a {
@@ -111,7 +115,7 @@
   display: block;
   z-index: 10;
   position: absolute;
-  top: -3rem;
+  top: 0;
   left: -2.5rem;
   background-image: radial-gradient(var(--beige) 30%, transparent 20%);
   background-position: 0 0;
