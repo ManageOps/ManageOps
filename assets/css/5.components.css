@@ -124,7 +124,7 @@
   width: 15rem;
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .activities {
     display: flex;
     flex-direction: row;
@@ -167,5 +167,17 @@
   .activity {
     flex: 1;
     max-width: 33%;
+  }
+
+  .footer,
+  .footer__links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer__colophon {
+    flex: 1;
+    text-align: right;
   }
 }
