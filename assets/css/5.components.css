@@ -28,9 +28,26 @@
   border-bottom-right-radius: 2rem;
 }
 
+.content h2 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.content a {
+  line-height: 2em;
+  border-bottom: 1px solid var(--beige);
+}
+
+.content a:hover {
+  color: var(--beige);
+  text-decoration: none;
+  border-bottom: 1px solid var(--beige);
+}
+
 .footer {
   background-color: var(--brown-2);
   color: var(--brown-1);
+  clear: both;
   padding: var(--space-m);
   margin-left: var(--space-m);
   margin-right: var(--space-m);
@@ -167,6 +184,10 @@
   .activity {
     flex: 1;
     max-width: 33%;
+  }
+
+  .content {
+    width: 66%;
   }
 
   .footer,
